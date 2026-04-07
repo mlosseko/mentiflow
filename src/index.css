@@ -1,16 +1,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0b0d11;
-  --s1: #13161d;
-  --s2: #1c2029;
-  --bd: #2a2f3d;
-  --a1: #6af0c8;
+  --bg: #f5f6fa;
+  --s1: #ffffff;
+  --s2: #f0f2f8;
+  --bd: #e2e6f0;
+  --a1: #6c63ff;
   --a2: #f06a9f;
-  --a3: #f0c86a;
-  --a4: #6a9ff0;
-  --tx: #e8eaf0;
-  --mu: #6b7280;
+  --a3: #f59e0b;
+  --a4: #3b82f6;
+  --tx: #1a1d2e;
+  --mu: #8b92a9;
   --r: 12px;
 }
 
