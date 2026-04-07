@@ -1,0 +1,96 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background: var(--s1);
+  border-radius: 20px 20px 0 0;
+  padding: 18px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 92dvh;
+  overflow-y: auto;
+  padding-bottom: max(18px, env(safe-area-inset-bottom));
+}
+
+.handle {
+  width: 40px;
+  height: 4px;
+  background: var(--bd);
+  border-radius: 2px;
+  margin: 0 auto 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.typeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.typeCard {
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid var(--bd);
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.typeCardActive {
+  border-color: var(--a1);
+  background: rgba(106, 240, 200, 0.06);
+}
+
+.typeIcon { font-size: 20px; margin-bottom: 4px; }
+.typeName { font-size: 13px; font-weight: 700; }
+.typeDesc { font-size: 11px; color: var(--mu); margin-top: 2px; }
+
+.formGroup { margin-bottom: 12px; }
+
+.label {
+  font-size: 11px;
+  color: var(--mu);
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 5px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.input {
+  width: 100%;
+  background: var(--s2);
+  border: 1px solid var(--bd);
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: var(--tx);
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus { border-color: var(--a1); }
+.input::placeholder { color: var(--mu); }
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
