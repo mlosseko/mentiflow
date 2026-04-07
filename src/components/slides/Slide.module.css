@@ -1,0 +1,231 @@
+/* Poll */
+.voteGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.voteBtn {
+  padding: 14px 8px;
+  border-radius: 10px;
+  border: 2px solid var(--bd);
+  background: var(--s2);
+  color: var(--tx);
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all 0.15s;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voteBtn:active { transform: scale(0.95); }
+
+.voted {
+  border-color: var(--a1);
+  background: rgba(106, 240, 200, 0.12);
+  color: var(--a1);
+}
+
+.bars { margin-top: 4px; }
+
+.bar { margin-bottom: 10px; }
+
+.barLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.barText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.barPct {
+  color: var(--a1);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.barTrack {
+  height: 8px;
+  background: var(--s2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--a1), var(--a4));
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.meta {
+  font-size: 10px;
+  color: var(--mu);
+  margin-top: 4px;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Scale */
+.scaleRow {
+  display: flex;
+  gap: 4px;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+.scaleBtn {
+  flex: 1;
+  min-width: 26px;
+  padding: 10px 2px;
+  border-radius: 7px;
+  border: 2px solid var(--bd);
+  background: var(--s2);
+  color: var(--tx);
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  touch-action: manipulation;
+  min-height: 42px;
+  transition: all 0.15s;
+}
+
+.scaleBtn:active { transform: scale(0.92); }
+
+.scaleBtnActive {
+  border-color: var(--a3);
+  background: rgba(240, 200, 106, 0.12);
+  color: var(--a3);
+}
+
+.scaleLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--mu);
+  font-family: 'DM Mono', monospace;
+}
+
+.avg { text-align: center; margin-top: 10px; }
+
+.avgNum {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--a3);
+  line-height: 1;
+}
+
+.avgLabel {
+  font-size: 11px;
+  color: var(--mu);
+  font-family: 'DM Mono', monospace;
+  margin-top: 4px;
+}
+
+/* Input */
+.inputRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.input {
+  flex: 1;
+  background: var(--s2);
+  border: 1px solid var(--bd);
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: var(--tx);
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus { border-color: var(--a1); }
+.input::placeholder { color: var(--mu); }
+
+/* Q&A */
+.qaList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.qaItem {
+  background: var(--s2);
+  border: 1px solid var(--bd);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.qaAnswered { opacity: 0.5; border-color: rgba(106, 240, 200, 0.25); }
+
+.qaVote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 26px;
+}
+
+.qaUpvote {
+  background: none;
+  border: 1px solid var(--bd);
+  border-radius: 5px;
+  padding: 4px 6px;
+  cursor: pointer;
+  color: var(--mu);
+  font-size: 11px;
+  transition: all 0.15s;
+  touch-action: manipulation;
+}
+
+.qaUpvoteActive { border-color: var(--a2); color: var(--a2); }
+
+.qaCount {
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+  color: var(--mu);
+}
+
+.qaText {
+  font-size: 13px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.qaCheck {
+  font-size: 10px;
+  color: var(--a1);
+  margin-left: 8px;
+}
+
+.qaAnswerBtn {
+  background: none;
+  border: none;
+  color: var(--a1);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 3px;
+  flex-shrink: 0;
+}
